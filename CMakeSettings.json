@@ -1,0 +1,43 @@
+{
+	"configurations": [
+		{
+			"name": "Debug-x64",
+			"generator": "Ninja",
+			"configurationType": "Debug",
+			"inheritEnvironments": [
+				"msvc_x64_x64"
+			],
+			"variables": [
+				{
+					"name": "KIDCLONE_TESTING",
+					"value": "1"
+				},
+				{
+					"name": "KIDCLONE_PCH",
+					"value": "1"
+				},
+				{
+					"name": "SDL2_LIBRARY",
+					"value": "C:\\Program Files\\SDL2\\lib\\Debug\\SDL2-staticd.lib"
+				},
+				{
+					"name": "SDL2MAIN_LIBRARY",
+					"value": "C:\\Program Files\\SDL2\\lib\\Debug\\SDL2maind.lib"
+				},
+				{
+					"name": "SDL2_INCLUDE_DIR",
+					"value": "C:\\Program Files\\SDL2\\include"
+				},
+				{
+					"name": "CMAKE_CXX_FLAGS_DEBUG",
+					"value": "/MDd"
+				}
+			],
+			"buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+			"installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+			"cmakeCommandArgs": "",
+			"buildCommandArgs": "-v",
+			"ctestCommandArgs": ""
+		}
+	]
+}
